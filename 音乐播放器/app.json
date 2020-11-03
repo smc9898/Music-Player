@@ -1,13 +1,45 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/search/search",
+    "pages/my/my",
+    "pages/paihang/paihang",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#c62f2f",
+    "navigationBarTitleText": "网易云",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list":[{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "pages/icon/_home.png",
+      "selectedIconPath": "pages/icon/home.png"
+    },
+    {
+      "pagePath": "pages/search/search",
+      "text": "搜索",
+      "iconPath": "pages/icon/_search.png",
+      "selectedIconPath": "pages/icon/search.png" 
+    },
+    {
+      "pagePath": "pages/paihang/paihang",
+      "text": "排行",
+      "iconPath": "pages/icon/_img.png",
+      "selectedIconPath": "pages/icon/img.png" 
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "pages/icon/_my.png",
+      "selectedIconPath": "pages/icon/my.png" 
+    }
+  ],
+  "color": "#757575",
+  "selectedColor": "#c62f2f"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
