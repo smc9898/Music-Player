@@ -1,2 +1,64 @@
 <!--pages/demo1/demo1.wxml-->
-<text>pages/demo1/demo1.wxml</text>
+<swiper class="content-info-slide" indicator-color="rgba(255,255,255,.5)"indicator-active-color="#c03d38" indicator-dots circular autoplay>
+  <swiper-item>
+    <image src="/pages/images/轮播图1.png"/>
+  </swiper-item>
+  <swiper-item>
+    <image src="/pages/images/轮播图1.png"/>
+  </swiper-item>
+  <swiper-item>
+    <image src="/pages/images/轮播图1.png"/>
+  </swiper-item>
+ </swiper>
+ <view class="content-index-portal">
+  <view>
+    <image src="/pages/icon/电台.png"/>
+    <text>私人电台</text>
+  </view>
+  <view>
+    <image src="/pages/icon/每日推荐.png"/>
+    <text>每日推荐</text>
+  </view>
+  <view>
+    <image src="/pages/icon/排行榜.png"/>
+    <text>排行榜</text>
+  </view>
+ </view>
+ <view class="content-index-list">
+   <view class="list-title">猜你喜欢</view>
+   <view class="list-inner">
+    <view class="list-item">
+       <image src="https://s3.ax1x.com/2020/11/12/BzpM8A.png"/><view>利刃行动</view>
+     </view>
+     <view class="list-item">
+       <image src="https://s3.ax1x.com/2020/11/15/DF0T0K.png"/><view>In the end</view>
+     </view>
+     <view class="list-item">
+       <image src="https://s3.ax1x.com/2020/11/12/Bzpn4H.jpg"/><view>苦难摇篮</view>
+     </view>
+     <view class="list-item">
+       <image src="https://s3.ax1x.com/2020/11/15/DF0om6.jpg"/><view>New Divide</view>
+     </view>
+     <view class="list-item">
+       <image src="https://s3.ax1x.com/2020/11/15/DF05Ox.jpg"/><view>黄铁行动</view>
+     </view>
+     <view class="list-item">
+       <image src="https://s3.ax1x.com/2020/11/15/DF0461.jpg"/><view>Numb</view>
+     </view>
+   </view>
+ </view>
+ <view class="content-index-list">
+   <view class="list-title">推荐歌单</view>
+   <view class="list-inner">
+     <view class="list-item">
+       <image src="https://s3.ax1x.com/2020/11/15/DFhDCq.png"/><view>塞壬唱片</view>
+     </view>
+     <view class="list-item">
+       <image src="https://s3.ax1x.com/2020/11/15/DFh05n.png"/><view>Linkin Park</view>
+     </view>
+     <view class="list-item">
+       <image src="https://s3.ax1x.com/2020/11/15/DFhdEj.jpg"/><view>焚风Beyond World</view>
+     </view>
+   </view>
+ </view>
+<!--底部播放器-->

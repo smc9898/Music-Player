@@ -4,13 +4,13 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": true,
     "enhance": false,
     "postcss": true,
     "preloadBackgroundData": false,
     "minified": true,
-    "newFeature": false,
+    "newFeature": true,
     "coverView": true,
     "nodeModules": false,
     "autoAudits": false,
@@ -28,46 +28,36 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "enableEngineNative": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
     "packNpmManually": false,
-    "packNpmRelationList": []
+    "packNpmRelationList": [],
+    "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.13.1",
+  "libVersion": "2.7.3",
   "appid": "wx8972ae633f2d24ac",
-  "projectname": "%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8",
+  "projectname": "wechat-music",
   "debugOptions": {
     "hidedInDevtools": []
   },
-  "scripts": {},
   "isGameTourist": false,
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
     "search": {
-      "current": -1,
       "list": []
     },
     "conversation": {
-      "current": -1,
       "list": []
     },
     "game": {
-      "current": -1,
-      "list": []
-    },
-    "plugin": {
-      "current": -1,
-      "list": []
-    },
-    "gamePlugin": {
-      "current": -1,
+      "currentL": -1,
       "list": []
     },
     "miniprogram": {
-      "current": -1,
       "list": []
     }
   }
