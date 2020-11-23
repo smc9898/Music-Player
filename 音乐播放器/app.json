@@ -1,15 +1,16 @@
 {
   "pages": [
+    
     "pages/index/index",
-    "pages/songlist/songlist",
     "pages/paihang/paihang",
+    "pages/songlist/songlist",
     "pages/my/my",
     "pages/play/play",
     "pages/mv/mv"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor":"#c62f2f",
+    "navigationBarBackgroundColor":"#c20c0c",
     "navigationBarTitleText": "网易云音乐",
     "navigationBarTextStyle": "white"
   },

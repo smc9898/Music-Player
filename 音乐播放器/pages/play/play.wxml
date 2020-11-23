@@ -65,7 +65,7 @@
     <!-- 两种图片：1、暂停图片(暂停状态)    2、播放图片(播放状态) -->
     <!-- 添加点击事件 -->
     <!-- 三元运算符
-        boolean类型表达式?结果1:结果2    解释：boolean结果为true，去结果1，结果为false，取结果2
+        boolean类型表达式?结果1:结果2    解释：boolean结果为true，取结果1，结果为false，取结果2
         例子： 3>2?"嘻嘻":"嘿嘿"
               state=="播放"?"播放图片":"暂停图片"
               '/images/play.png'
@@ -75,7 +75,7 @@
     <!-- 点击切换下一首 -->
     <image bindtap='nextSong' src='/images/next.png'></image>
     <!-- 心形图片 -->
-    <image src="/images/xin.png"></image>
+    <image src="/images/a.png"></image>
   </view>
 </view>
 <!-- 播放音频的标签 
@@ -85,4 +85,4 @@
   bindended：歌曲播放到末尾时触发执行的方法
 -->
 <audio bindended="changeMusic" wx:if="http://music.163.com/song/media/outer/url?id={{id}}.mp3" action="{{action}}" bindtimeupdate="changeTime"
-src="http://music.163.com/song/media/outer/url?id={{id}}.mp3"></audio> 
+src="http://music.163.com/song/media/outer/url?id={{id}}.mp3"></audio>

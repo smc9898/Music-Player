@@ -1,26 +1,26 @@
 <!--pages/demo1/demo1.wxml-->
-<swiper class="content-info-slide" indicator-color="rgba(255,255,255,.5)"indicator-active-color="#c03d38" indicator-dots circular autoplay>
+<view><swiper class="content-info-slide" indicator-color="rgba(255,255,255,.5)"indicator-active-color="#c03d38" indicator-dots circular autoplay>
   <swiper-item>
-    <image src="/pages/images/轮播图1.png"/>
+    <image bindtap="gotoPlay" src="https://s3.ax1x.com/2020/11/20/DlKc9g.png" data-id="1493144062"/>
   </swiper-item>
   <swiper-item>
-    <image src="/pages/images/轮播图1.png"/>
+    <image bindtap="gotoPlay" src="https://s3.ax1x.com/2020/11/20/DlKc9g.png" data-id="1493144062"/>
   </swiper-item>
   <swiper-item>
-    <image src="/pages/images/轮播图1.png"/>
+    <image bindtap="gotoPlay" src="https://s3.ax1x.com/2020/11/20/DlKc9g.png" data-id="1493144062"/>
   </swiper-item>
- </swiper>
+ </swiper></view>
  <view class="content-index-portal">
   <view>
-    <image src="/pages/icon/电台.png"/>
+    <image src="https://s3.ax1x.com/2020/11/20/DlKsN8.png"/>
     <text>私人电台</text>
   </view>
   <view>
-    <image src="/pages/icon/每日推荐.png"/>
+    <image src="https://s3.ax1x.com/2020/11/20/DlKy4S.png"/>
     <text>每日推荐</text>
   </view>
   <view>
-    <image src="/pages/icon/排行榜.png"/>
+    <image src="https://s3.ax1x.com/2020/11/20/DlKrAf.png"/>
     <text>排行榜</text>
   </view>
  </view>
@@ -28,22 +28,22 @@
    <view class="list-title">猜你喜欢</view>
    <view class="list-inner">
     <view class="list-item">
-       <image src="https://s3.ax1x.com/2020/11/12/BzpM8A.png"/><view>利刃行动</view>
+       <image bindtap="gotoPlay" src="https://s3.ax1x.com/2020/11/20/Dlmu6I.png" data-id="1485858993"/><view>秋绪</view>
      </view>
      <view class="list-item">
-       <image src="https://s3.ax1x.com/2020/11/15/DF0T0K.png"/><view>In the end</view>
+      <image bindtap="gotoPlay" src="https://s3.ax1x.com/2020/11/20/Dlmn1A.jpg" data-id="1313107065"/><view>Rise</view>
      </view>
      <view class="list-item">
-       <image src="https://s3.ax1x.com/2020/11/12/Bzpn4H.jpg"/><view>苦难摇篮</view>
+      <image bindtap="gotoPlay" src="https://s3.ax1x.com/2020/11/20/DlmKXt.png" data-id="1403774122"/><view>Speed of Light</view>
      </view>
      <view class="list-item">
-       <image src="https://s3.ax1x.com/2020/11/15/DF0om6.jpg"/><view>New Divide</view>
+      <image bindtap="gotoPlay" src="https://s3.ax1x.com/2020/11/20/Dlml0f.png" data-id="1396561141"/><view>Ready?</view>
      </view>
      <view class="list-item">
-       <image src="https://s3.ax1x.com/2020/11/15/DF05Ox.jpg"/><view>黄铁行动</view>
+      <image bindtap="gotoPlay" src="https://s3.ax1x.com/2020/11/20/DlmJhQ.png" data-id="506196018"/><view>Legends Never Die</view>
      </view>
      <view class="list-item">
-       <image src="https://s3.ax1x.com/2020/11/15/DF0461.jpg"/><view>Numb</view>
+      <image bindtap="gotoPlay" src="https://s3.ax1x.com/2020/11/20/Dlmmpd.jpg" data-id="1455699833"/><view>Untitled world</view>
      </view>
    </view>
  </view>

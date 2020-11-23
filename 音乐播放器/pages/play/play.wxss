@@ -68,7 +68,7 @@ swipper-item的宽高跟swipper一样大
   linear：匀速
   infinite:循环往复
   */
-  animation: zhuan 10s linear infinite;
+  animation: zhuan 6s linear infinite;
 }
 @keyframes zhuan{
   from{
@@ -111,7 +111,7 @@ swipper-item的宽高跟swipper一样大
 .controls{
   width: 100%;
   height: 150rpx;
-  background: #c20c0c;
+
   position: absolute;
   left: 0rpx;
   bottom: 0rpx;

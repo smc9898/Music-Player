@@ -1,2 +1,44 @@
 <!--pages/paihang/paihang.wxml-->
-<text>pages/paihang/paihang.wxml</text>
+<view class="all">
+  <view class="title">
+    <view>
+      <image class="titleImg" src="https://s3.ax1x.com/2020/11/21/D3nPvd.png" />
+    </view>
+    <view class="text">
+      <view class="titleText">云音乐热歌榜</view>
+      <view class="fubiaoti">云音乐</view>
+      <view class="jianjie">云音乐热歌榜：云音乐用户一周内收听所有线上歌曲，官方TOP排行榜</view>
+    </view>
+  </view>
+
+
+  <!--播放列表-->
+
+  <view class="list">
+    <view class="list-title">云音乐热歌榜</view>
+    <block wx:for="{{songs}}" wx:for-item="song" wx:for-index="i">
+      <view class='musicContainer'>
+        <!-- 左边封面 -->
+        <view class='left'>
+          <image wx:if="{{albumPicUrls[i]}}" src='{{albumPicUrls[i]}}'>
+          </image>
+        </view>
+        <!-- 中间歌曲信息 -->
+        <view class='center'>
+          <view class='songName'>{{song.name}}</view>
+          <view class='singerName'>{{song.artists[0].name}}-《{{song.album.name}}》</view>
+        </view>
+        <!-- 右边播放按钮 -->
+        <view class='right'>
+          <!-- 给图片添加点击事件 
+        点击图片执行gotoplay方法
+
+        小程序传参数都是通过data传参
+      -->
+          <image bindtap='gotoPlay' src='/images/play.png' data-id="{{song.id}}"></image>
+        </view>
+      </view>
+
+    </block>
+  </view>
+</view>

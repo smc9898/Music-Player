@@ -5,6 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
+    kw:"",
+    songs:[],
+    albumPicUrls:[],
+    limit:6
 
   },
 
@@ -13,6 +17,13 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+  gotoPlay:function(e){
+    var id = e.currentTarget.dataset.id;
+    var ids = [];
+    wx.navigateTo({
+      url:"../play/play?mid="+id+"&ids="+ids,
+    })
   },
 
   /**
