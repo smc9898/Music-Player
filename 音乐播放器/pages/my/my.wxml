@@ -1,6 +1,38 @@
-<view class='user' style="background-image:url('/images/bg.png')">
-  <view class="user-image">
-    <image src="{{user.avatarUrl}}"></image>
+<!--index.wxml-->
+<!--<view class="container">-->
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"/>
+      <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+    </block>
+ <!--</view>--> 
+ <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text> 
+  </view>-->
+  
   </view>
-  <view class='nickname'>{{user.nickName}}</view>
-</view>
+  <view class="list">
+    <button class="kefu" bindtap="mydata">
+    <view class="contact">我的资料</view>
+        <image class="img" src="/pages/icon/a6a.png" />
+    </button>
+  </view>
+  <view class="list">
+    <button class="kefu" bindtap="mylist">
+    <view class="contact">我的歌单</view>
+        <image class="img" src="/pages/icon/a6a.png" />
+    </button>
+  </view>
+  <view class="list">
+    <button class="kefu" bindtap="aboutus">
+    <view class="contact">关于我们</view>
+        <image class="img" src="/pages/icon/a6a.png" />
+    </button>
+  </view>
+  <view class="list">
+    <button class="kefu"  open-type="contact">
+      <view class="contact">联系客服</view>
+        <image class="img" src="/pages/icon/a6a.png" />
+    </button>
+  </view>

@@ -1,0 +1,89 @@
+<!--pages/paihang/paihang.wxml-->
+<view class="all">
+  <view class="title">
+    <view>
+      <image class="titleImg" src="https://s3.ax1x.com/2020/11/25/Daa3fP.jpg" />
+    </view>
+    <view class="text">
+      <view class="titleText">混合理论</view>
+      <view class="fubiaoti">Linkin Park</view>
+      <view class="jianjie">《混合理论》是美国摇滚乐队林肯公园的首张录音室专辑，共收录12首歌曲。该专辑由唐·吉尔摩担任制作人，于2000年10月24日发行</view>
+    </view>
+  </view>
+
+
+  <!--播放列表-->
+
+  <view class="list">
+    <view class="list-title">全部歌曲</view>
+    <!-- <block wx:for="{{songs}}" wx:for-item="song" wx:for-index="i"> -->
+      <view class='musicContainer'>
+        <!-- 中间歌曲信息 -->
+        <view class='center'>
+          <view class='songName'>Remnant Of The Future</view>
+          <view class='singerName'>World Beyond</view>
+        </view>
+        <!-- 右边播放按钮 -->
+        <view class='right'>
+          <image bindtap='gotoPlay' src='/images/more.png' data-id="1422356977"></image>
+        </view>
+      </view>
+      <view class='musicContainer'>
+        <!-- 中间歌曲信息 -->
+        <view class='center'>
+          <view class='songName'>Stormbringer</view>
+          <view class='singerName'>World Beyond</view>
+        </view>
+        <!-- 右边播放按钮 -->
+        <view class='right'>
+          <image bindtap='gotoPlay' src='/images/more.png' data-id="1422368206"></image>
+        </view>
+      </view>
+      <view class='musicContainer'>
+        <!-- 中间歌曲信息 -->
+        <view class='center'>
+          <view class='songName'>Destiny To Combat</view>
+          <view class='singerName'>World Beyond</view>
+        </view>
+        <!-- 右边播放按钮 -->
+        <view class='right'>
+          <image bindtap='gotoPlay' src='/images/more.png' data-id="1422356980"></image>
+        </view>
+      </view>
+      <view class='musicContainer'>
+        <!-- 中间歌曲信息 -->
+        <view class='center'>
+          <view class='songName'>Calibration</view>
+          <view class='singerName'>World Beyond</view>
+        </view>
+        <!-- 右边播放按钮 -->
+        <view class='right'>
+          <image bindtap='gotoPlay' src='/images/more.png' data-id="1422365549"></image>
+        </view>
+      </view>
+      <view class='musicContainer'>
+        <!-- 中间歌曲信息 -->
+        <view class='center'>
+          <view class='songName'>The Last Line Of Defence</view>
+          <view class='singerName'>World Beyond</view>
+        </view>
+        <!-- 右边播放按钮 -->
+        <view class='right'>
+          <image bindtap='gotoPlay' src='/images/more.png' data-id="1422370156"></image>
+        </view>
+      </view>
+      <view class='musicContainer'>
+        <!-- 中间歌曲信息 -->
+        <view class='center'>
+          <view class='songName'>Right On Track</view>
+          <view class='singerName'>World Beyond</view>
+        </view>
+        <!-- 右边播放按钮 -->
+        <view class='right'>
+          <image bindtap='gotoPlay' src='/images/more.png' data-id="1422356977"></image>
+        </view>
+      </view>
+
+    <!-- </block> -->
+  </view>
+</view>

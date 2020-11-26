@@ -1,0 +1,8 @@
+<!--pages/aboutus/aboutus.wxml-->
+<view>
+  <image class="icon" src="/pages/icon/app.jpg"/>
+</view>
+<view class="appname">音乐播放器</view>
+<view class="banben">版本号V1.0.7</view>
+<view class="banquan">版权所有</view>
+<view class="name">smc</view>

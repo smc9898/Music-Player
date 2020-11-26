@@ -75,7 +75,7 @@
     <!-- 点击切换下一首 -->
     <image bindtap='nextSong' src='/images/next.png'></image>
     <!-- 心形图片 -->
-    <image src="/images/a.png"></image>
+    <image bindtap="likeOrDislike" src="/images/{{like=='like'?'a':'b'}}.png" data="{{id}}"></image>
   </view>
 </view>
 <!-- 播放音频的标签 

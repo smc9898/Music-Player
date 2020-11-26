@@ -1,12 +1,19 @@
 {
   "pages": [
-    
+    "pages/my/my",
     "pages/index/index",
+    
+    
     "pages/paihang/paihang",
     "pages/songlist/songlist",
-    "pages/my/my",
+    
     "pages/play/play",
-    "pages/mv/mv"
+    "pages/mv/mv",
+    "pages/aboutus/aboutus",
+    "pages/list1/list1",
+    "pages/list2/list2",
+    "pages/list3/list3",
+    "pages/mylist/mylist"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -33,8 +40,8 @@
       {
         "pagePath": "pages/paihang/paihang",
         "text": "排行",
-        "iconPath": "pages/icon/_img.png",
-        "selectedIconPath": "pages/icon/img.png"
+        "iconPath": "pages/icon/排行2.jpg",
+        "selectedIconPath": "pages/icon/排行.jpg"
       },
       {
         "pagePath": "pages/my/my",

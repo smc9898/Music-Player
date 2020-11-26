@@ -1,0 +1,90 @@
+<!--pages/paihang/paihang.wxml-->
+<view class="all">
+  <view class="title">
+    <view>
+      <image class="titleImg" src="https://s3.ax1x.com/2020/11/15/DFhdEj.jpg" />
+    </view>
+    <view class="text">
+      <view class="titleText">焚风World Beyond</view>
+      <view class="fubiaoti">心灵终结3.3.4</view>
+      <view class="jianjie">本电台仅整理游戏内已采用的音乐，不含任何弃曲、WB原版以及有关曲目</view>
+      <view class="jianjie">焚风：World Beyond（WB） 俄罗斯，未来史诗风格</view>
+    </view>
+  </view>
+
+
+  <!--播放列表-->
+
+  <view class="list">
+    <view class="list-title">全部歌曲</view>
+    <!-- <block wx:for="{{songs}}" wx:for-item="song" wx:for-index="i"> -->
+      <view class='musicContainer'>
+        <!-- 中间歌曲信息 -->
+        <view class='center'>
+          <view class='songName'>Remnant Of The Future</view>
+          <view class='singerName'>World Beyond</view>
+        </view>
+        <!-- 右边播放按钮 -->
+        <view class='right'>
+          <image bindtap='gotoPlay' src='/images/more.png' data-id="1422356977"></image>
+        </view>
+      </view>
+      <view class='musicContainer'>
+        <!-- 中间歌曲信息 -->
+        <view class='center'>
+          <view class='songName'>Stormbringer</view>
+          <view class='singerName'>World Beyond</view>
+        </view>
+        <!-- 右边播放按钮 -->
+        <view class='right'>
+          <image bindtap='gotoPlay' src='/images/more.png' data-id="1422368206"></image>
+        </view>
+      </view>
+      <view class='musicContainer'>
+        <!-- 中间歌曲信息 -->
+        <view class='center'>
+          <view class='songName'>Destiny To Combat</view>
+          <view class='singerName'>World Beyond</view>
+        </view>
+        <!-- 右边播放按钮 -->
+        <view class='right'>
+          <image bindtap='gotoPlay' src='/images/more.png' data-id="1422356980"></image>
+        </view>
+      </view>
+      <view class='musicContainer'>
+        <!-- 中间歌曲信息 -->
+        <view class='center'>
+          <view class='songName'>Calibration</view>
+          <view class='singerName'>World Beyond</view>
+        </view>
+        <!-- 右边播放按钮 -->
+        <view class='right'>
+          <image bindtap='gotoPlay' src='/images/more.png' data-id="1422365549"></image>
+        </view>
+      </view>
+      <view class='musicContainer'>
+        <!-- 中间歌曲信息 -->
+        <view class='center'>
+          <view class='songName'>The Last Line Of Defence</view>
+          <view class='singerName'>World Beyond</view>
+        </view>
+        <!-- 右边播放按钮 -->
+        <view class='right'>
+          <image bindtap='gotoPlay' src='/images/more.png' data-id="1422370156"></image>
+        </view>
+      </view>
+      <view class='musicContainer'>
+        <!-- 中间歌曲信息 -->
+        <view class='center'>
+          <view class='songName'>Right On Track</view>
+          <view class='singerName'>World Beyond</view>
+        </view>
+        <!-- 右边播放按钮 -->
+        <view class='right'>
+          <image bindtap='gotoPlay' src='/images/more.png' data-id="1422356977"></image>
+        </view>
+      </view>
+
+    <!-- </block> -->
+  </view>
+</view>

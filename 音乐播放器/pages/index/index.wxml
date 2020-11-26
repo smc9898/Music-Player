@@ -12,15 +12,15 @@
  </swiper></view>
  <view class="content-index-portal">
   <view>
-    <image src="https://s3.ax1x.com/2020/11/20/DlKsN8.png"/>
+    <image src="https://s3.ax1x.com/2020/11/20/DlKsN8.png" bindtap="gotoVideo"/>
     <text>私人电台</text>
   </view>
   <view>
-    <image src="https://s3.ax1x.com/2020/11/20/DlKy4S.png"/>
+    <image src="https://s3.ax1x.com/2020/11/20/DlKy4S.png" bindtap="gotorecommend"/>
     <text>每日推荐</text>
   </view>
   <view>
-    <image src="https://s3.ax1x.com/2020/11/20/DlKrAf.png"/>
+    <image src="https://s3.ax1x.com/2020/11/20/DlKrAf.png" bindtap="gotoBang"/>
     <text>排行榜</text>
   </view>
  </view>
@@ -50,14 +50,14 @@
  <view class="content-index-list">
    <view class="list-title">推荐歌单</view>
    <view class="list-inner">
-     <view class="list-item">
+     <view class="list-item" bindtap="gotoList" data-id="3">
        <image src="https://s3.ax1x.com/2020/11/15/DFhDCq.png"/><view>塞壬唱片</view>
      </view>
-     <view class="list-item">
-       <image src="https://s3.ax1x.com/2020/11/15/DFh05n.png"/><view>Linkin Park</view>
+     <view class="list-item" bindtap="gotoList" data-id="2">
+       <image src="https://s3.ax1x.com/2020/11/25/Daa3fP.jpg"/><view>混合理论</view>
      </view>
-     <view class="list-item">
-       <image src="https://s3.ax1x.com/2020/11/15/DFhdEj.jpg"/><view>焚风Beyond World</view>
+     <view class="list-item" bindtap="gotoList" data-id="1">
+       <image src="https://s3.ax1x.com/2020/11/15/DFhdEj.jpg"/><view>焚风World Beyond</view>
      </view>
    </view>
  </view>

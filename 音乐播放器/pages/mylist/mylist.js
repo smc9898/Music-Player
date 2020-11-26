@@ -13,6 +13,7 @@ Page({
     mvs:[],
     setu:[],
     //定义存放mv的数组
+    music_id:[],
     limit:6
   },
   
@@ -36,40 +37,25 @@ Page({
       //多个参数传递使用&拼接
       url:"../play/play?mid="+id+"&ids="+ids,
     })
-  },
-  do_search:function(){
-    
+    console.log('sss')
+    console.log(id)
   },
 
   /**;
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    this.sb(this)
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    this.sb(this)
-    console.log(this.data.albumPicUrls)
-    this.setSeTu()
-    console.log(this.data.setu)
+    
+   // this.setSeTu()
+    //console.log(this.data.setu)
   },
 
-  setSeTu: function() {
-    var setu = []
-    setu.push('https://s3.ax1x.com/2020/11/15/DFhdEj.jpg')
-    setu.push('https://s3.ax1x.com/2020/11/12/Bzpn4H.jpg')
-    setu.push('https://s3.ax1x.com/2020/11/15/DF0om6.jpg')
-    setu.push('https://s3.ax1x.com/2020/11/15/DF05Ox.jpg')
-    setu.push('https://s3.ax1x.com/2020/11/20/DlmJhQ.png')
-    this.setData({
-      setu:setu
-    })
-   
-  },
 
   /**
    * 生命周期函数--监听页面显示
@@ -112,10 +98,27 @@ Page({
   onShareAppMessage: function () {
 
   },
+  sb: function(that){
+    wx.cloud.callFunction({
+      name:'get_music',
+      success:function(res){
+        //搜索结果
+        console.log(res.result.data)
+        var resultSongs = res.result.data;
+        var songs = []
+        //遍历resultSongs
+        for(var i = 0; i < resultSongs.length; i++){
+            songs.push(resultSongs[i].song)
+        }
+        that.setData({
+          songs:songs
+        })
+      }
+    })
+  }
 
    //随机数组排列
-   getMusicImage:function(searchIds,i,length){
-    //console.log('cnxm')
+   /* getMusicImage:function(searchIds,i,length){
     //递归：自己调用自己
     //获取存储所有封面结果的数组
     var albumPicUrls = this.data.albumPicUrls;
@@ -128,7 +131,7 @@ Page({
     if(++i<length){
       that.getMusicImage(searchIds,i,length);
     }
-  },
+  }, */
  
  /**
    * 根据搜索的id查询歌曲详情(找歌曲封面)
@@ -167,7 +170,7 @@ Page({
    * for循环中写异步加载不是按照你for循环执行的顺序执行的，顺序会有错乱，使用递归解决
    *  需要存放所有歌名的数组、需要每次递归的下标、需要存储mv结果的数组,截至下标  、歌手id
    */
-  getMvBySongName:function(names,i,length,artists){
+  /* getMvBySongName:function(names,i,length,artists){
     //获取存储mv结果的全局变量
     var mvs = this.data.mvs;
     var that = this;
@@ -205,20 +208,20 @@ Page({
         }
       }
     })
-  },
+  }, */
   /**
    * 监听mv图标点击事件
    */
-  playMv:function(e){
+  /* playMv:function(e){
     //跳转到mv页面
     var mvId = e.currentTarget.dataset.mvid;
     //携带mvid跳转到mv页面
     wx.navigateTo({
       url: '/pages/mv/mv?mvId='+mvId,
     })
-  },
+  }, */
   
-  sb: function(that){
+/*   sb: function(that){
     console.log(that.data.albumPicUrls)
     //定义空数组存储搜索出来的所有id
     var searchIds = [];
@@ -258,6 +261,7 @@ Page({
         })
       }
     })
-  }
+    console.log('sbcnm')
+  } */
     
 })

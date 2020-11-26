@@ -33,13 +33,17 @@ Page({
     //歌曲进度条最大值
     max:100,
     //进度条读取移动的值
-    move:0
+    move:0,
+    like: 'like'
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    //连结云数据库
+  
+
+
     //options参数包含上一个页面跳转携带过来的参数
     //获取传递的歌曲id值
     var mid = options.mid;
@@ -298,6 +302,63 @@ Page({
      
     }
   },
+  likeOrDislike:function(){
+    var that = this
+    console.log(this.data)
+    wx.cloud.callFunction({
+      name:'get_music',
+      success:function(res){
+        //搜索结果
+        console.log(res.result.data)
+        var resultSongs = res.result.data;
+        var songs = []
+        var flag = false
+        //遍历resultSongs
+        for(var i = 0; i < resultSongs.length; i++){
+           if (resultSongs[i].music_id == that.data.id) {
+            flag = true
+            break;
+           }
+        }
+        if (flag) {
+          // delete
+          wx.cloud.callFunction({
+            // 云函数名称
+            name: 'del_music',
+            // 传给云函数的参数
+            data: {
+              music_id :that.data.id,
+            },
+            success: function(res) {
+              console.log(res) 
+            },
+            fail: console.error
+          })
+          that.setData({
+            like: 'like'
+          })
+        } else {
+          // add 
+          wx.cloud.callFunction({
+            // 云函数名称
+            name: 'add_music',
+            // 传给云函数的参数
+            data: {
+              music_id :that.data.id,
+              song : that.data.song,
+            },
+            success: function(res) {
+              console.log(res) 
+            },
+            fail: console.error
+          })
+          that.setData({
+            like: 'dislike'
+          })
+        }
+      }
+    })
+  },
   /**
    * 上一首歌曲
    */
@@ -423,7 +484,33 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    console.log('判断like')
+    console.log(this.data.id)
+    var that = this
+    wx.cloud.callFunction({
+      name:'get_music',
+      success:function(res){
+        var resultSongs = res.result.data;
+        var flag = false
+        //遍历resultSongs
+        for(var i = 0; i < resultSongs.length; i++){
+           if (resultSongs[i].music_id == that.data.id) {
+            flag = true
+            break;
+           }
+        }
+        console.log(flag)
+        if (flag) {
+          that.setData({
+            like: 'dislike'
+          })
+        } else {
+          that.setData({
+            like: 'like'
+          })
+        }
+      }
+    })
   },
 
   /**

@@ -1,0 +1,26 @@
+/* pages/aboutus/aboutus.wxss */
+.icon{
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 300rpx;
+  margin-top: 150rpx;
+}
+.appname{
+  margin-left: 288rpx;
+  margin-top: 50rpx;
+  font-size: large;
+}
+.banben{
+  font-size: large;
+  margin-top: 400rpx;
+  margin-left: 265rpx;
+}
+.banquan{
+  font-size: large;
+  margin-top: 50rpx;
+  margin-left: 295rpx;
+}
+.name{
+  margin-top: 20rpx;
+  margin-left: 335rpx;
+}

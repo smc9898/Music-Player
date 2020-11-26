@@ -1,26 +1,54 @@
-page{
-  background: #222;
-}
-.user{
+/**index.wxss**/
+.userinfo {
   width: 100%;
-  height: 400rpx;
-  /* background: red; */
-  overflow: hidden;
-}
-.user-image{
-  width: 150rpx;
   height: 150rpx;
-  /* background: black; */
-  margin: 0rpx auto;
-  margin-top: 50rpx;
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
 }
-.user-image image{
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  float: left;
+}
+
+.userinfo-nickname {
+  color: #222;
+  font-size: 40rpx;
+  float: left;
+  margin-top: 65rpx ;
+  margin-left: 25rpx;
+}
+
+.usermotto {
+  margin-top: 150px;
+}
+.button-style{
+  background-color:#eee; 
+  border-radius: 8rpx; 
+  margin: 10rpx;
+}
+.list{
+  width: 100%;
+  height: 125rpx;
+  float: left;
+  background-color: #eee;
+}
+
+.kefu{
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border: blanchedalmond;
 }
-.nickname{
-  color: white;
-  font-size: 40rpx;
-  text-align: center;
+.contact{
+  float: left;
+  margin-top: 10rpx;
+}
+.img{
+  width: 24rpx;
+  height: 42rpx;
+  float: right;
+  margin-top: 40rpx;
 }
