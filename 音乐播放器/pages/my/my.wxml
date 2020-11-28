@@ -1,20 +1,14 @@
 <!--index.wxml-->
-<!--<view class="container">-->
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"/>
       <view class="userinfo-nickname">{{userInfo.nickName}}</view>
     </block>
- <!--</view>--> 
- <!-- <view class="usermotto">
-    <text class="user-motto">{{motto}}</text> 
-  </view>-->
-  
   </view>
   <view class="list">
     <button class="kefu" bindtap="mydata">
-    <view class="contact">我的资料</view>
+    <view class="contact">会员服务</view>
         <image class="img" src="/pages/icon/a6a.png" />
     </button>
   </view>

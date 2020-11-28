@@ -34,10 +34,8 @@ Page({
     }) 
   },
   gotorecommend:function() {
-    //console.log(this.data.recommend)
     var list_num = Math.floor(Math.random() * this.data.recommend.length)
     var id = this.data.recommend[list_num]
-    //console.log(id)
     var ids = [];
     wx.navigateTo({
       url:"../play/play?mid="+id+"&ids="+ids,
@@ -45,18 +43,6 @@ Page({
   },
 
   gotoVideo:function(video,i,length){
-    /* var video = this.data.video;
-    var that = this;
-    var video_num = Math.floor(Math.random() * that.data.video.length)
-    video.push(that.data.video[video_num]);
-    that.setData({
-         video:video
-    })
-    if(++i<length){
-      that.gotoVideo(video,i,length);
-    } */
-    //console.log('cnxm')
-    //console.log(this.data.video)
     var list_num = Math.floor(Math.random() * this.data.video.length)
     var url = this.data.video[list_num]
    

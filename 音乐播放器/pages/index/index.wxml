@@ -4,10 +4,10 @@
     <image bindtap="gotoPlay" src="https://s3.ax1x.com/2020/11/20/DlKc9g.png" data-id="1493144062"/>
   </swiper-item>
   <swiper-item>
-    <image bindtap="gotoPlay" src="https://s3.ax1x.com/2020/11/20/DlKc9g.png" data-id="1493144062"/>
+    <image bindtap="gotoPlay" src="https://s3.ax1x.com/2020/11/27/DrPLrT.png" data-id="1498342485"/>
   </swiper-item>
   <swiper-item>
-    <image bindtap="gotoPlay" src="https://s3.ax1x.com/2020/11/20/DlKc9g.png" data-id="1493144062"/>
+    <image bindtap="gotoPlay" src="https://s3.ax1x.com/2020/11/27/DrPOqU.png" data-id="1496599467"/>
   </swiper-item>
  </swiper></view>
  <view class="content-index-portal">

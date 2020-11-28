@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/my/my",
-    "pages/index/index",
     
+    "pages/index/index",
+    "pages/my/my",
     
     "pages/paihang/paihang",
     "pages/songlist/songlist",
