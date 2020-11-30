@@ -1,0 +1,9 @@
+/* pages/pay/pay.wxss */
+.aba{
+  width: 100%;
+  height: 1000rpx;
+}
+.pay{
+  width: 100%;
+  height: 100%;
+}

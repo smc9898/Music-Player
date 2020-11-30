@@ -2,35 +2,29 @@
 page{
   display: flex;
   flex-direction: column;
-  background: #f2f4f5;
+  background: #97483b;
   color: #000000;
   height: 100%;
 }
-.all{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background: #97483b;
-  display: flex;
-  flex-direction: column;  
-}
+
 .title{
   width: 100%;
   height: 300rpx;
-  margin-top: 50rpx;
-  margin-left: 30rpx;
+  background: #97483b;
+  margin-bottom: 40rpx;
   display: flex;
 }
 .titleImg{
   width: 250rpx;
   height: 250rpx;
+  margin-top: 50rpx;
+  margin-left: 50rpx;
   border-radius: 4%;
 }
 .text{
   display: flex;
   flex-direction: column;
+  margin-top: 50rpx;
   margin-left: 35rpx;
   font-size: 35rpx;
 }
@@ -50,7 +44,6 @@ page{
 .list{
   width: 100%;
   height: 100%;
-  margin-top: 40rpx;
   background: white;
   display: flex;
   flex-direction: column;
@@ -65,7 +58,7 @@ page{
 .musicContainer{
   width: 100%;
   height: 150rpx;
-  margin-top: 10rpx;
+  background: white;
   /*弹性盒子布局：全程---》flexible box */
   /*给父容器设置弹性盒子布局，子容器会自动分配父容器的空间
     横向为主轴，竖直方向叫交叉轴，默认以主轴方向为基准分配空间

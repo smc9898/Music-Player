@@ -37,7 +37,7 @@ page{
 }
 .content-info-slide{
   height: 302rpx;
-  margin-bottom: 1px;
+  margin-bottom: 1rpx;
 }
 .content-info-slide image{
   width: 100%;
@@ -49,7 +49,7 @@ image{
 }
 .content-index-portal{
   display: flex;
-  margin-bottom: 10px ;
+  margin-bottom: 10rpx ;
 
 }
 .content-index-portal>view{

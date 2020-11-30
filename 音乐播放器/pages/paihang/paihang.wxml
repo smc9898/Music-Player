@@ -1,5 +1,5 @@
 <!--pages/paihang/paihang.wxml-->
-<view class="all">
+
   <view class="title">
     <view>
       <image class="titleImg" src="https://s3.ax1x.com/2020/11/21/D3nPvd.png" />
@@ -41,4 +41,3 @@
 
     </block>
   </view>
-</view>

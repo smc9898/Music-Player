@@ -86,6 +86,9 @@ Page({
     recommend.push('1455699833')
     recommend.push('1396561141')
     recommend.push('506196018')
+    recommend.push('1485858993')
+    recommend.push('1313107065')
+    recommend.push('506196018')
     this.setData({
       recommend: recommend
     })

@@ -1,0 +1,5 @@
+<!--pages/pay/pay.wxml-->
+<view class="aba">
+  <image class="pay" src="/pages/icon/pay.png" />
+</view>
+<view>吃不起饭了，赏点吧5555</view>

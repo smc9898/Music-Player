@@ -4,11 +4,10 @@
     "pages/index/index",
     "pages/my/my",
     
-    "pages/paihang/paihang",
+    "pages/pay/pay",
     "pages/songlist/songlist",
-    
+    "pages/paihang/paihang",
     "pages/play/play",
-    "pages/mv/mv",
     "pages/aboutus/aboutus",
     "pages/list1/list1",
     "pages/list2/list2",
@@ -18,8 +17,9 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor":"#c20c0c",
-    "navigationBarTitleText": "网易云音乐",
-    "navigationBarTextStyle": "white"
+    "navigationBarTitleText": "潮音乐",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
   },
   "tabBar": {
     "color": "black",

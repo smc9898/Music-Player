@@ -40,10 +40,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    //连结云数据库
-  
-
-
     //options参数包含上一个页面跳转携带过来的参数
     //获取传递的歌曲id值
     var mid = options.mid;

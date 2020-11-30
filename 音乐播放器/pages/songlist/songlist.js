@@ -5,12 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    //定义图片数组
-    imgUrls: [
-      'http://p1.music.126.net/XyOsH9i6nO3tyiV4xzTzEA==/109951164218412778.jpg',
-      'http://p1.music.126.net/f5KCVtAf1JOgKMtgPQZy4A==/109951164218427420.jpg',
-      'http://p1.music.126.net/kf7c_L6sEFJvywB9QrdIhQ==/109951164218484097.jpg'
-    ],
     //定义变量存储搜索关键字
     kw:"",
     //定义歌曲数组存储搜索结果
@@ -23,14 +17,14 @@ Page({
     //每首歌曲都有id、歌曲名、歌曲封面、歌手名、专辑名     json
     // 学生：name  age
     //定义查询条数的变量
-    limit:6
+    limit:8
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log("页面加载");
+
   },
 
   /**

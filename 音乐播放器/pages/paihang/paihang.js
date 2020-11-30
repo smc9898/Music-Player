@@ -13,7 +13,7 @@ Page({
     mvs:[],
     setu:[],
     //定义存放mv的数组
-    limit:6
+    limit:10
   },
   
   gotoPlay:function(e){
@@ -37,9 +37,7 @@ Page({
       url:"../play/play?mid="+id+"&ids="+ids,
     })
   },
-  do_search:function(){
-    
-  },
+
 
   /**;
    * 生命周期函数--监听页面加载
@@ -114,7 +112,7 @@ Page({
   },
 
    //随机数组排列
-   getMusicImage:function(searchIds,i,length){
+   /* getMusicImage:function(searchIds,i,length){
     //console.log('cnxm')
     //递归：自己调用自己
     //获取存储所有封面结果的数组
@@ -128,14 +126,14 @@ Page({
     if(++i<length){
       that.getMusicImage(searchIds,i,length);
     }
-  },
+  }, */
  
  /**
    * 根据搜索的id查询歌曲详情(找歌曲封面)
    * for循环中写异步加载不是按照你for循环执行的顺序执行的，顺序会有错乱，使用递归解决
    *  //需要存放所有id的数组，需要每次递归的下标，需要存储封面结果的数组,截至下标
    */
-  /* getMusicImage:function(searchIds,i,length){
+  getMusicImage:function(searchIds,i,length){
     //递归：自己调用自己
     //获取存储所有封面结果的数组
     var albumPicUrls = this.data.albumPicUrls;
@@ -160,7 +158,7 @@ Page({
         }
       }
     })
-  }, */
+  },
   
   /**
    * 根据歌曲名称查询mv

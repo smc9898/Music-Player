@@ -11,9 +11,7 @@
   </view>
 </view>
 
-<!-- 使用微信for循环遍历所有歌曲 
-    移动代码快捷键：alt+上下箭头
--->
+<!-- 使用微信for循环遍历所有歌曲 -->
 <block wx:for="{{songs}}" wx:for-item="song" wx:for-index="i">
   <view class='musicContainer'>
     <!-- 左边封面 -->

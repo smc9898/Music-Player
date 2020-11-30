@@ -2,50 +2,47 @@
 page{
   display: flex;
   flex-direction: column;
-  background: #f2f4f5;
+  background: #97483b;
   color: #000000;
   height: 100%;
+}
 
-}
-.all{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background: #97483b;
-  /*height: 1000rpx;*/ 
-  /*margin-left: 75rpx;*/
-  display: flex;
-  flex-direction: column;  
-  /*border:#222 solid 1px;*/
-}
 .title{
   width: 100%;
-  height: 100rpx;
-  margin-top: 50rpx;
-  margin-left: 30rpx;
+  height: 150rpx;
+  background: #97483b;
+  margin-bottom: 40rpx;
   display: flex;
 }
 .titleImg{
   width: 250rpx;
   height: 250rpx;
+  margin-top: 50rpx;
+  margin-left: 50rpx;
   border-radius: 4%;
 }
 .text{
   display: flex;
   flex-direction: column;
-  margin-left: 25rpx;
+  margin-top: 50rpx;
   font-size: 35rpx;
 }
 .titleText{
   color: white;
 }
-
+.fubiaoti{
+  margin-top: 35rpx;
+  font-size: 30rpx;
+  color: rgb(201, 200, 200);
+}
+.jianjie{
+  margin-top: 35rpx;
+  font-size: 25rpx;
+  color: rgb(158, 158, 158);
+}
 .list{
   width: 100%;
-  height: 100%;
-  margin-top: 40rpx;
+  height: 1500rpx;
   background: white;
   display: flex;
   flex-direction: column;
@@ -53,15 +50,14 @@ page{
 }
 .list-title{
   width: 100%;
-  height: 60rpx;
+  height: 100rpx;
   margin-top: 25rpx;
   margin-left: 50rpx;
 }
 .musicContainer{
   width: 100%;
   height: 150rpx;
-  /*上外边距*/
-  margin-top: 10rpx;
+  background: white;
   /*弹性盒子布局：全程---》flexible box */
   /*给父容器设置弹性盒子布局，子容器会自动分配父容器的空间
     横向为主轴，竖直方向叫交叉轴，默认以主轴方向为基准分配空间

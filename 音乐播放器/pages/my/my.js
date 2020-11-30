@@ -45,8 +45,8 @@ Page({
     }
   },
   mydata:function(){
-    wx.navigateToo({
-      url: '',
+    wx.navigateTo({
+      url: '/pages/pay/pay',
     })
   },
   mylist:function(){
