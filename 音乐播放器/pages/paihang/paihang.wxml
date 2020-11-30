@@ -30,11 +30,6 @@
         </view>
         <!-- 右边播放按钮 -->
         <view class='right'>
-          <!-- 给图片添加点击事件 
-        点击图片执行gotoplay方法
-
-        小程序传参数都是通过data传参
-      -->
           <image bindtap='gotoPlay' src='/images/more.png' data-id="{{song.id}}"></image>
         </view>
       </view>

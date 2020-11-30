@@ -2,38 +2,24 @@
 Page({
 
   /**
-   * 页面的初始数据
+   * 
    */
   data: {
     kw:"",
-    //定义歌曲数组存储搜索结果
     songs:[],
-    //定义存储封面的数组
     albumPicUrls:[],
     mvs:[],
     setu:[],
-    //定义存放mv的数组
     limit:10
   },
   
   gotoPlay:function(e){
-    // e中包含我们所携带的所有参数
-    //接受事件传递的参数
     var id = e.currentTarget.dataset.id;
-    //定义空数组，存储所有歌曲id
     var ids = [];
-    //遍历歌曲列表，将每首歌曲的id添加到数组中
     for(var i=0;i<this.data.songs.length;i++){
       ids.push(this.data.songs[i].id);
     }
-    //跳转到play播放页面
-    //保留当前页面，还能跳转到新页面
     wx.navigateTo({
-      //被跳转页面的路径
-      // url: '/pages/play/play',
-      // 大碗宽面："../play/play?mid=1359595520"
-      //giao ："../play/play?mid=556220425&ids="[1,2,3,4,5]
-      //多个参数传递使用&拼接
       url:"../play/play?mid="+id+"&ids="+ids,
     })
   },
@@ -129,12 +115,10 @@ Page({
   }, */
  
  /**
-   * 根据搜索的id查询歌曲详情(找歌曲封面)
-   * for循环中写异步加载不是按照你for循环执行的顺序执行的，顺序会有错乱，使用递归解决
-   *  //需要存放所有id的数组，需要每次递归的下标，需要存储封面结果的数组,截至下标
+   * 
+   *  
    */
   getMusicImage:function(searchIds,i,length){
-    //递归：自己调用自己
     //获取存储所有封面结果的数组
     var albumPicUrls = this.data.albumPicUrls;
     var that = this;
@@ -182,8 +166,6 @@ Page({
           for(var j=0;j<result.length;j++){
             //根据当前歌手的id查询对应的mv
             if (artists[i] == result[j].artistId){
-              //找到了当前歌手对应的mv
-              //将mv的id存放到数组中
               mvs.push(result[j].id);
               flag = true;
               break;

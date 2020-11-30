@@ -18,7 +18,6 @@
 
   <view class="list">
     <view class="list-title">全部歌曲</view>
-    <!-- <block wx:for="{{songs}}" wx:for-item="song" wx:for-index="i"> -->
       <view class='musicContainer'>
         <!-- 中间歌曲信息 -->
         <view class='center'>
@@ -85,7 +84,5 @@
           <image bindtap='gotoPlay' src='/images/more.png' data-id="1473615924"></image>
         </view>
       </view>
-
-    <!-- </block> -->
   </view>
 </view>
